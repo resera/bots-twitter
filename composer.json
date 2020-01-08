@@ -1,0 +1,30 @@
+{
+    "name": "resera/bots-twitter",
+    "description": "Bot to automate various twitter actions",
+    "type": "library",
+    "homepage": "https://github.com/resera/bots-twitter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "MB Resera",
+            "email": "admin@resera.lt"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Resera\\TwitterBot\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Resera\\TwitterBot\\TwitterBotServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
